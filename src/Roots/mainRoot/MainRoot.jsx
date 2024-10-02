@@ -13,7 +13,7 @@ const MainRoot = () => {
             <Navbar></Navbar>
           <div className='mt-8 grid md:grid-cols-4 grid-cols-1 gap-3'>
             <div className='border'><LeftSide/></div>
-            <div className='col-span-2 border'>
+            <div className='col-span-2 h-screen overflow-y-auto'>
               {
                 news.map(oneNews=>
                   <div className='mb-8 shadow-lg' key={oneNews._id}>

@@ -4,6 +4,7 @@ import Login from "../Authentication/Login/Login";
 import Register from "../Authentication/Register/Register";
 import MainRoot from "../Roots/mainRoot/MainRoot";
 import News_details from "../pages/News_details/News_details";
+import PrivateRoute from "../Roots/PrivateRoute/PrivateRoute";
 
 const Route = createBrowserRouter([
    {
@@ -25,7 +26,7 @@ const Route = createBrowserRouter([
         },
         {
             path:'/details/:id',
-            element:<News_details></News_details>
+            element:<PrivateRoute> <News_details></News_details></PrivateRoute>
         }
     ]
    }
